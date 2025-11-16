@@ -4,7 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 
 function Contact() {
   return (
-    <div className="py-24 px-6 bg-[#2e2e2e4d]">
+    <div className="py-24 px-6 bg-[#2e2e2e4d]" id="contact">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           Get In <span className="text-[#ff7b00]">Touch</span>
