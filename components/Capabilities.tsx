@@ -4,7 +4,7 @@ import { MdOutlineShield } from "react-icons/md";
 
 function Capabilities() {
   return (
-    <div id="capabilties" className="py-24 px-6 bg-[#2e2e2e4d]">
+    <div id="capabilities" className="py-24 px-6 bg-[#2e2e2e4d]">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           Our <span className="text-[#ff7b00]">Capabilities</span>

@@ -1,5 +1,13 @@
+"use client";
 import React from "react";
 function Hero() {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
@@ -17,18 +25,20 @@ function Hero() {
           awareness
         </p>
         <div className="flex gap-4 justify-center">
-          <a
-            href="#capabilties"
+          <button
+            // href="#capabilities"
+            onClick={() => scrollToSection("capabilities")}
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg font-medium ring-offset-[#141414] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff7b00] bg-[#ff7b00] text-[#fafafa] hover:bg-[#ff7b00e6] hover-glow h-11 px-8"
           >
             Explore Capabilities
-          </a>
-          <a
-            href="#contact"
+          </button>
+          <button
+            // href="#contact"
+            onClick={() => scrollToSection("contact")}
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff7b00] border border-[#ff7b00] text-[#ff7b00] hover:bg-[#ff7b001a] h-11 px-8"
           >
             Contact Us
-          </a>
+          </button>
         </div>
       </div>
     </div>
